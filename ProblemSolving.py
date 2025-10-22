@@ -69,7 +69,7 @@ print("Unique lists : ",ans_list[1])
 city = "Bangalore"
 
 # first 4 character
-# way 1 :
+# way 1
 for idx in range(0,4,1):
      print(city[idx],end=" ")
 
