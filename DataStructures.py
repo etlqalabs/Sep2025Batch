@@ -141,7 +141,6 @@ print(first_list)
 print(last_list)
 ans = first_list+last_list
 print("answer list : ",ans)
-
 print("Before : ",list_numbers)
 list_numbers[1] = 100
 print("After : ", list_numbers)
