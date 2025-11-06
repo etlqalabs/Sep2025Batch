@@ -3,7 +3,7 @@
 
 # Bucket name : bucket-read-write-files
 # Path : employees_data
-# file_key : employees_data/emp_details.csv
+# file_key : employees_data/emp_details_source.csv
 import pandas as pd
 import boto3
 from io import StringIO
@@ -29,7 +29,7 @@ def write_file_to_s3(df_name,bucket_name,file_key):
 
 
 bucket_name = "bucket-read-write-files"
-file_key_read = "employees_data/emp_details.csv"
+file_key_read = "employees_data/emp_details_source.csv"
 file_key_write = "employees_data/emp_details_target.csv"
 df = read_file_from_s3(bucket_name,file_key_read)
 write_file_to_s3(df,bucket_name,file_key_write)
