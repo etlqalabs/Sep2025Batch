@@ -25,7 +25,7 @@ def target_data_setup():
     print("Target dataframe read - This executes After Test")
 
 
-@pytest.fixture(autouse=True)
+#@pytest.fixture(autouse=True)
 def target_data_setup():
     print("This is autouse - pre test  excuetiuon fixture")
     yield
